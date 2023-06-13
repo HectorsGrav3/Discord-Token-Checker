@@ -1,3 +1,10 @@
+"""
+Discord Token Validator Script
+Author: Notorious Hector
+Date: June 13, 2023
+Description: This script validates Discord tokens read from a file and separates them into valid and invalid tokens.
+"""
+
 import requests
 
 # ANSI color codes
