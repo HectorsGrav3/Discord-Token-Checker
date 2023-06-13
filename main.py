@@ -40,8 +40,11 @@ def main():
         for token in validated_tokens:
             file.write(token + '\n')
 
-    print(f'{Color.GREEN}Validated tokens: {validated_tokens}{Color.RESET}')
-    print(f'{Color.RED}Invalid tokens: {invalid_tokens}{Color.RESET}')
+    num_valid_tokens = len(validated_tokens)
+    num_invalid_tokens = len(invalid_tokens)
+
+    print(f'{Color.GREEN}Valid tokens: {num_valid_tokens}{Color.RESET}')
+    print(f'{Color.RED}Invalid tokens: {num_invalid_tokens}{Color.RESET}')
 
 if __name__ == '__main__':
     main()
