@@ -38,6 +38,10 @@ def validate_tokens(tokens):
     return validated_tokens, invalid_tokens
 
 def main():
+
+    print(f"Made by {Color.GREEN}Notorious Hector{Color.RESET}")
+    print("Starting token validation...")
+
     with open('tokens.txt', 'r') as file:
         token_list = file.readlines()
 
